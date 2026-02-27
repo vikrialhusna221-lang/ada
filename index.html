@@ -366,6 +366,14 @@
             box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
             font-size: 1.5em;
             animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            overflow: hidden;
+        }
+
+        .user-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         @keyframes popIn {
@@ -1290,7 +1298,7 @@
         </div>
         
         <div class="user-icon" onclick="toggleDropdown()">
-            <i class="fas fa-user"></i>
+            <img src="https://raw.githubusercontent.com/vikrialhusna221-lang/vaalh_0/main/profile.jpg" alt="Profile">
         </div>
         
         <div class="dropdown-menu" id="dropdownMenu">
